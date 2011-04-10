@@ -10,7 +10,7 @@ import getpass
 import sys
 import os
 
-root_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.dirname(sys.argv[0])
 sys.path.insert(0, os.path.join(root_dir, 'lib'))
 from gaePath.util import gae_sdk_path, add_gae_sdk_path
 
